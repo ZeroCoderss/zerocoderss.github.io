@@ -12,7 +12,6 @@ export function HomeComp() {
     <div className="w-full">
       <HeaderNav />
       <Hero />
-
       <Feature />
       <Feature2 />
       <Pricing2 />

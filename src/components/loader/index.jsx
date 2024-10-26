@@ -1,6 +1,4 @@
-import React from "react";
-
-const LoaderPage: React.FC = () => {
+const LoaderPage = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="flex flex-col items-center">

@@ -134,9 +134,6 @@ export const HeaderNav = () => {
           </Button>
           <div className="border-r hidden md:inline"></div>
 
-          <Link to="/login">
-            <Button variant="outline">Sign in</Button>
-          </Link>
           <Link to="/signup" className="hidden sm:block">
             <Button>Get started</Button>
           </Link>
