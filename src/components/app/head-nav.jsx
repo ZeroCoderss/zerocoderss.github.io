@@ -38,6 +38,10 @@ export const HeaderNav = () => {
           title: "Recordings",
           href: "/recordings",
         },
+        {
+          title: "Invoice",
+          href: "/invoice",
+        }
       ],
     },
     {

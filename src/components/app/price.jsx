@@ -1,6 +1,7 @@
 import { Check, Minus, MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { price } from "@/config/data/home-page";
 
 export const Pricing2 = () => (
   <div className="w-full py-5 lg:py-10">
@@ -20,8 +21,7 @@ export const Pricing2 = () => (
           <div className="px-3 py-1 md:px-6 md:py-4  gap-2 flex flex-col">
             <p className="text-2xl">Startup</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              {price.p}
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>
@@ -34,8 +34,7 @@ export const Pricing2 = () => (
           <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
             <p className="text-2xl">Growth</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              {price.p}
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>
@@ -48,8 +47,7 @@ export const Pricing2 = () => (
           <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
             <p className="text-2xl">Enterprise</p>
             <p className="text-sm text-muted-foreground">
-              Our goal is to streamline SMB trade, making it easier and faster
-              than ever for everyone and everywhere.
+              {price.p}
             </p>
             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
               <span className="text-4xl">$40</span>
