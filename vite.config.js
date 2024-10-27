@@ -10,4 +10,17 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    outDir: "dist", // The output directory for the static build
+    emptyOutDir: true, // Clears the output directory before building
+    assetsDir: "assets", // Directory for static assets
+    rollupOptions: {
+      // Options to control how the final files are bundled
+      input: "/index.html", // Ensures the entry point is correct
+      output: {
+        manualChunks: undefined, // Prevents code splitting for simpler deployment
+      },
+    },
+  },
+  base: "./",
 });

@@ -1,5 +1,6 @@
 import { MoveRight, PhoneCall } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { heroSection } from "@/config/data/home-page";
 
 export const Hero = () => (
   <div className="w-full">
@@ -12,12 +13,10 @@ export const Hero = () => (
         </div>
         <div className="flex gap-4 flex-col">
           <h1 className="text-5xl md:text-7xl max-w-2xl tracking-tighter text-center font-regular">
-            This is the start of something new
+            {heroSection.h1_text}
           </h1>
           <p className="text-lg md:text-xl leading-relaxed tracking-tight text-muted-foreground max-w-2xl text-center">
-            Managing a small business today is already tough. Avoid further
-            complications by ditching outdated, tedious trade methods. Our goal
-            is to streamline SMB trade, making it easier and faster than ever.
+            {heroSection.p_text}
           </p>
         </div>
         <div className="flex flex-row gap-3">
