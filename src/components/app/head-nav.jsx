@@ -23,24 +23,8 @@ export const HeaderNav = () => {
       description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
-        },
-        {
-          title: "Statistics",
-          href: "/statistics",
-        },
-        {
-          title: "Dashboards",
-          href: "/dashboards",
-        },
-        {
-          title: "Recordings",
-          href: "/recordings",
-        },
-        {
-          title: "Invoice",
-          href: "/invoice",
+          title: "ZC Invoice",
+          href: "/zc-invoice",
         }
       ],
     },
@@ -53,23 +37,10 @@ export const HeaderNav = () => {
           href: "/about",
         },
         {
-          title: "Fundraising",
-          href: "/fundraising",
-        },
-        {
-          title: "Investors",
-          href: "/investors",
-        },
-        {
           title: "Contact us",
           href: "/contact",
         },
       ],
-    },
-    {
-      title: "Price",
-      href: "/",
-      description: "",
     },
   ];
 
