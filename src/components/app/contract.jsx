@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { contact } from "@/config/data/home-page";
 
 export const Contact = () => {
   const [date, setDate] = useState(new Date());
@@ -23,16 +24,14 @@ export const Contact = () => {
           <div className="flex flex-col gap-6">
             <div className="flex  flex-col gap-4">
               <div>
-                <Badge>Contact</Badge>
+                <Badge>{contact.contact}</Badge>
               </div>
               <div className="flex flex-col gap-2">
                 <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-left font-regular">
-                  Something new
+                  {contact.newUpdate}
                 </h4>
                 <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-sm text-left">
-                  Managing a small business today is already tough. Avoid
-                  further complications by ditching outdated, tedious trade
-                  methods.
+                  {contact.p1}
                 </p>
               </div>
             </div>
@@ -41,7 +40,7 @@ export const Contact = () => {
               <div className="flex flex-col gap-1">
                 <p>Easy to use</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it easy to use and understand.
+                  {contact.p2}
                 </p>
               </div>
             </div>
@@ -50,7 +49,7 @@ export const Contact = () => {
               <div className="flex flex-col gap-1">
                 <p>Fast and reliable</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it easy to use and understand.
+                  {contact.p2}
                 </p>
               </div>
             </div>
@@ -59,7 +58,7 @@ export const Contact = () => {
               <div className="flex flex-col gap-1">
                 <p>Beautiful and modern</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it easy to use and understand.
+                  {contact.p2}
                 </p>
               </div>
             </div>

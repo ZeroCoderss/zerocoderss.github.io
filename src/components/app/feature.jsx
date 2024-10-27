@@ -1,6 +1,7 @@
 import { Check } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { User } from "lucide-react";
+import { feature } from "@/config/data/home-page";
 
 export const Feature = () => (
   <div className="w-full py-5 lg:py-10">
@@ -9,14 +10,14 @@ export const Feature = () => (
         <div className="flex gap-10 flex-col">
           <div className="flex gap-4 flex-col">
             <div>
-              <Badge variant="outline">Platform</Badge>
+              <Badge variant="outline">{feature.badge}</Badge>
             </div>
             <div className="flex gap-2 flex-col">
               <h2 className="text-3xl lg:text-5xl tracking-tighter max-w-xl text-left font-regular">
-                Something new!
+                {feature.h2}
               </h2>
               <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
-                Managing a small business today is already tough.
+                {feature.p1}
               </p>
             </div>
           </div>
@@ -24,27 +25,27 @@ export const Feature = () => (
             <div className="flex flex-row gap-6 items-start">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>Easy to use</p>
+                <p>{feature.p2}</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it easy to use and understand.
+                  {feature.p3}
                 </p>
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>Fast and reliable</p>
+                <p>{feature.p4}</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it fast and reliable.
+                  {feature.p5}
                 </p>
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
-                <p>Beautiful and modern</p>
+                <p>{feature.p6}</p>
                 <p className="text-muted-foreground text-sm">
-                  We&apos;ve made it beautiful and modern.
+                  {feature.p7}
                 </p>
               </div>
             </div>
@@ -62,14 +63,14 @@ export const Feature2 = () => (
       <div className="flex p-5 flex-col gap-10">
         <div className="flex gap-4 flex-col items-start">
           <div>
-            <Badge>Platform</Badge>
+            <Badge>{feature.feature2.badge}</Badge>
           </div>
           <div className="flex gap-2 flex-col">
             <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-              Something new!
+              {feature.feature2.h2}
             </h2>
             <p className="text-lg max-w-xl lg:max-w-lg leading-relaxed tracking-tight text-muted-foreground  text-left">
-              Managing a small business today is already tough.
+              {feature.feature2.p1}
             </p>
           </div>
         </div>
@@ -77,20 +78,18 @@ export const Feature2 = () => (
           <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col">
             <User className="w-8 h-8 stroke-1" />
             <div className="flex flex-col">
-              <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+              <h3 className="text-xl tracking-tight">{feature.feature2.h3}</h3>
               <p className="text-muted-foreground max-w-xs text-base">
-                Our goal is to streamline SMB trade, making it easier and faster
-                than ever.
+                {feature.feature2.p}
               </p>
             </div>
           </div>
           <div className="bg-muted rounded-md  aspect-square p-6 flex justify-between flex-col">
             <User className="w-8 h-8 stroke-1" />
             <div className="flex flex-col">
-              <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+              <h3 className="text-xl tracking-tight">{feature.feature2.h3}</h3>
               <p className="text-muted-foreground max-w-xs text-base">
-                Our goal is to streamline SMB trade, making it easier and faster
-                than ever.
+                {feature.feature2.p}
               </p>
             </div>
           </div>
@@ -98,20 +97,18 @@ export const Feature2 = () => (
           <div className="bg-muted rounded-md aspect-square p-6 flex justify-between flex-col">
             <User className="w-8 h-8 stroke-1" />
             <div className="flex flex-col">
-              <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+              <h3 className="text-xl tracking-tight">{feature.feature2.h3}</h3>
               <p className="text-muted-foreground max-w-xs text-base">
-                Our goal is to streamline SMB trade, making it easier and faster
-                than ever.
+                {feature.feature2.p}
               </p>
             </div>
           </div>
           <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col">
             <User className="w-8 h-8 stroke-1" />
             <div className="flex flex-col">
-              <h3 className="text-xl tracking-tight">Pay supplier invoices</h3>
+              <h3 className="text-xl tracking-tight">{feature.feature2.h3}</h3>
               <p className="text-muted-foreground max-w-xs text-base">
-                Our goal is to streamline SMB trade, making it easier and faster
-                than ever.
+                {feature.feature2.p}
               </p>
             </div>
           </div>

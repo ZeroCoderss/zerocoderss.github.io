@@ -7,27 +7,25 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { faq } from "@/config/data/home-page";
 
 export const Faq = () => (
   <div className="w-full py-5 lg:py-10">
     <div className="container mx-auto">
       <div className="flex flex-col gap-10">
         <div className="flex text-center justify-center items-center gap-4 flex-col">
-          <Badge variant="outline">FAQ</Badge>
+          <Badge variant="outline">{faq.faq}</Badge>
           <div className="flex gap-2 flex-col">
             <h4 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-regular">
-              This is the start of something new
+              {faq.h4}
             </h4>
             <p className="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-center">
-              Managing a small business today is already tough. Avoid further
-              complications by ditching outdated, tedious trade methods. Our
-              goal is to streamline SMB trade, making it easier and faster than
-              ever.
+              {faq.p}
             </p>
           </div>
           <div>
             <Button className="gap-4" variant="outline">
-              Any questions? Reach out <PhoneCall className="w-4 h-4" />
+              {faq.question} <PhoneCall className="w-4 h-4" />
             </Button>
           </div>
         </div>
@@ -40,10 +38,7 @@ export const Faq = () => (
                   This is the start of something new
                 </AccordionTrigger>
                 <AccordionContent>
-                  Managing a small business today is already tough. Avoid
-                  further complications by ditching outdated, tedious trade
-                  methods. Our goal is to streamline SMB trade, making it easier
-                  and faster than ever.
+                  {faq.accordionContent}
                 </AccordionContent>
               </AccordionItem>
             ))}

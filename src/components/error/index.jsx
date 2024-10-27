@@ -1,6 +1,7 @@
 import { clearCookies } from "@/lib/cookies";
 import { Button } from "../ui/button";
 import { useNavigate } from "react-router-dom";
+import { error } from "@/config/data/home-page";
 
 const CookieErrorComp = () => {
   const navigate = useNavigate();
@@ -24,11 +25,7 @@ const CookieErrorComp = () => {
         {/* Description */}
         <div className="flex items-center justify-center">
           <p className="mt-2 text-lg text-gray-600 w-[70%]">
-            Please clear the cookies for this website to resolve potential
-            issues. You can do this by going to your browser's settings,
-            navigating to the privacy or security section, and finding the
-            option to manage or clear cookies. This might help improve
-            performance and functionality on this site.
+            {error.p}
           </p>
         </div>
 
