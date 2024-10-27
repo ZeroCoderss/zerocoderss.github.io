@@ -1,17 +1,21 @@
-export const blogs = {
-    latestArticles: "Latest articles",
-    view: "View all articles",
-    goal1: "Our goal is to streamline SMB trade, making it easier and faster than ever.",
-    goal2: "We've made it easier than ever to pay supplier invoices, making your business more efficient and profitable.",
-    goal3: "Our goal is to streamline SMB trade, making it easier and faster than ever.",
-    goal4: "Our goal is to streamline SMB trade, making it easier and faster than ever.",
-    invoices: "Pay supplier invoices"
-};
+export const blogs = [
+    {
+        goal: "Our goal is to streamline SMB trade, making it easier and faster than ever.",
+        title: "Pay supplier invoices",
+        videoUrl: "https://www.turing.com/resources/top-web-development-challenges"
+    },
+    {
+        goal: "Our goal is to streamline SMB trade, making it easier and faster than ever.",
+        title: "Pay supplier invoices",
+        videoUrl: "https://www.turing.com/resources/top-web-development-challenges"
+    }
+]
+
 export const contact = {
     contact: "Contact",
     newUpdate: "Something new",
     p1: "Managing a small business today is already tough. Avoid further complications by ditching outdated, tedious trade methods.",
-    p2: "We&apos;ve made it easy to use and understand."
+    p2: "We have made it easy to use and understand."
 };
 export const faq = {
     faq: "FAQ",
@@ -25,11 +29,11 @@ export const feature = {
     h2: "Something new!",
     p1: "Managing a small business today is already tough",
     p2: "Easy to use",
-    p3: "We&apos;ve made it easy to use and understand.",
+    p3: "We have made it easy to use and understand.",
     p4: "Fast and reliable",
-    p5: "We&apos;ve made it easy to use and understand.",
+    p5: "We have made it easy to use and understand.",
     p6: "Fast and reliable",
-    p7: "We&apos;ve made it easy to use and understand.",
+    p7: "We have made it easy to use and understand.",
     feature2: {
         badge: "Platform",
         h2: "Something new!",
