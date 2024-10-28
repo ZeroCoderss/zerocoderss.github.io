@@ -10,56 +10,58 @@ import {
 import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+const navigationItems = [
+  {
+    title: "Home",
+    href: "/",
+    description: "",
+  },
+  {
+    title: "Product",
+    description: "Managing a small business today is already tough.",
+    button: { text: "Book a meeting", href: "/contact" },
+    items: [
+      {
+        title: "ZC Invoice",
+        href: "/prodcut/zc-invoice",
+      },
+    ],
+  },
+  {
+    title: "Company",
+    description: "Managing a small business today is already tough.",
+    button: { text: "Book a meeting", href: "/contact" },
+    items: [
+      {
+        title: "About us",
+        href: "/about",
+      },
+      {
+        title: "Contact us",
+        href: "/contact",
+      },
+    ],
+  },
+];
 
 export const HeaderNav = () => {
-  const navigationItems = [
-    {
-      title: "Home",
-      href: "/",
-      description: "",
-    },
-    {
-      title: "Product",
-      description: "Managing a small business today is already tough.",
-      items: [
-        {
-          title: "ZC Invoice",
-          href: "prodcut/zc-invoice",
-        },
-      ],
-    },
-    {
-      title: "Company",
-      description: "Managing a small business today is already tough.",
-      items: [
-        {
-          title: "About us",
-          href: "/about",
-        },
-        {
-          title: "Contact us",
-          href: "/contact",
-        },
-      ],
-    },
-  ];
-
   const [isOpen, setOpen] = useState(false);
+
   return (
     <header className="w-full z-40 fixed top-0 left-0 bg-background ">
       <div className="container p-5 relative mx-auto min-h-20 flex gap-2 flex-row xl:grid xl:grid-cols-3 items-center">
         <div className="flex pr-6">
-          <p className="font-semibold">System K</p>
+          <p className="font-semibold">ZeroCoderss</p>
         </div>
 
-        <div className="justify-start items-center gap-2 lg:flex hidden flex-row ">
-          <NavigationMenu className="flex justify-start items-start ">
+        <div className="justify-center items-center gap-2 lg:flex hidden flex-row ">
+          <NavigationMenu className="flex justify-start items-start  ">
             <NavigationMenuList className="flex justify-start gap-4 flex-row">
               {navigationItems.map((item) => (
                 <NavigationMenuItem key={item.title}>
                   {item.href ? (
                     <>
-                      <NavigationMenuLink>
+                      <NavigationMenuLink href={item.href}>
                         <Button variant="ghost">{item.title}</Button>
                       </NavigationMenuLink>
                     </>
@@ -78,7 +80,9 @@ export const HeaderNav = () => {
                               </p>
                             </div>
                             <Button size="sm" className="mt-10">
-                              Book a call today
+                              <Link to={item.button.href}>
+                                {item.button.text}
+                              </Link>
                             </Button>
                           </div>
                           <div className="flex flex-col text-sm h-full justify-end">
@@ -105,7 +109,7 @@ export const HeaderNav = () => {
 
         <div className="flex justify-end w-full gap-2">
           <Button variant="ghost" className="hidden md:inline">
-            Book a demo
+            <Link to="contact">Book a meeting</Link>
           </Button>
           <div className="border-r hidden md:inline"></div>
 

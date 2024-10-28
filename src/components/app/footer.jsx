@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export const Footer1 = () => {
+export const FooterComp = () => {
   const navigationItems = [
     {
       title: "Home",
@@ -59,8 +59,8 @@ export const Footer1 = () => {
         <div className="grid p-5 lg:grid-cols-2 gap-10 items-center ">
           <div className="flex gap-8 flex-col items-start ">
             <div className="flex gap-2 flex-col">
-              <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl font-regular text-left">
-                System k™
+              <h2 className="text-3xl md:text-4xl tracking-tighter max-w-xl font-regular text-left">
+                ZeroCoderss™
               </h2>
               <p className="text-lg max-w-lg leading-relaxed tracking-tight text-background/75 text-left">
                 Managing a small business today is already tough.

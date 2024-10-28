@@ -1,11 +1,17 @@
-import { Check, Minus, MoveRight, PhoneCall } from "lucide-react";
+import { Check, MoveRight, PhoneCall } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { price } from "@/config/data/home-page";
 
-export const Pricing2 = () => (
-  <div className="w-full py-5 lg:py-10">
-    <div className="p-5 container mx-auto">
+export const Pricing1 = () => (
+  <div className="w-full py-20 lg:py-40 px-5">
+    <div className="container mx-auto">
       <div className="flex text-center justify-center items-center gap-4 flex-col">
         <Badge>Pricing</Badge>
         <div className="flex gap-2 flex-col">
@@ -16,129 +22,175 @@ export const Pricing2 = () => (
             Managing a small business today is already tough.
           </p>
         </div>
-        <div className="grid text-left w-full grid-cols-3 lg:grid-cols-4 divide-x pt-20">
-          <div className="col-span-3 lg:col-span-1"></div>
-          <div className="px-3 py-1 md:px-6 md:py-4  gap-2 flex flex-col">
-            <p className="text-2xl">Startup</p>
-            <p className="text-sm text-muted-foreground">
-              {price.p}
-            </p>
-            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
-              <span className="text-4xl">$40</span>
-              <span className="text-sm text-muted-foreground"> / month</span>
-            </p>
-            <Button variant="outline" className="gap-4 mt-8">
-              Try it <MoveRight className="w-4 h-4" />
-            </Button>
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
-            <p className="text-2xl">Growth</p>
-            <p className="text-sm text-muted-foreground">
-              {price.p}
-            </p>
-            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
-              <span className="text-4xl">$40</span>
-              <span className="text-sm text-muted-foreground"> / month</span>
-            </p>
-            <Button className="gap-4 mt-8">
-              Try it <MoveRight className="w-4 h-4" />
-            </Button>
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
-            <p className="text-2xl">Enterprise</p>
-            <p className="text-sm text-muted-foreground">
-              {price.p}
-            </p>
-            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
-              <span className="text-4xl">$40</span>
-              <span className="text-sm text-muted-foreground"> / month</span>
-            </p>
-            <Button variant="outline" className="gap-4 mt-8">
-              Contact us <PhoneCall className="w-4 h-4" />
-            </Button>
-          </div>
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1  py-4">
-            <b>Features</b>
-          </div>
-          <div></div>
-          <div></div>
-          <div></div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">SSO</div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
-            AI Assistant
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Minus className="w-4 h-4 text-muted-foreground" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
-            Version Control
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Minus className="w-4 h-4 text-muted-foreground" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
-            Members
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <p className="text-muted-foreground text-sm">5 members</p>
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <p className="text-muted-foreground text-sm">25 members</p>
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <p className="text-muted-foreground text-sm">100+ members</p>
-          </div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
-            Multiplayer Mode
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Minus className="w-4 h-4 text-muted-foreground" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          {/* New Line */}
-          <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
-            Orchestration
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Minus className="w-4 h-4 text-muted-foreground" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
-          <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
-            <Check className="w-4 h-4 text-primary" />
-          </div>
+        <div className="grid pt-20 text-left grid-cols-1 lg:grid-cols-3 w-full gap-8">
+          <Card className="w-full rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Startup
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button variant="outline" className="gap-4">
+                  Sign up today <MoveRight className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="w-full shadow-2xl rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Growth
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button className="gap-4">
+                  Sign up today <MoveRight className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+          <Card className="w-full rounded-md">
+            <CardHeader>
+              <CardTitle>
+                <span className="flex flex-row gap-4 items-center font-normal">
+                  Enterprise
+                </span>
+              </CardTitle>
+              <CardDescription>
+                Our goal is to streamline SMB trade, making it easier and faster
+                than ever for everyone and everywhere.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="flex flex-col gap-8 justify-start">
+                <p className="flex flex-row  items-center gap-2 text-xl">
+                  <span className="text-4xl">$40</span>
+                  <span className="text-sm text-muted-foreground">
+                    {" "}
+                    / month
+                  </span>
+                </p>
+                <div className="flex flex-col gap-4 justify-start">
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-row gap-4">
+                    <Check className="w-4 h-4 mt-2 text-primary" />
+                    <div className="flex flex-col">
+                      <p>Fast and reliable</p>
+                      <p className="text-muted-foreground text-sm">
+                        We&apos;ve made it fast and reliable.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button variant="outline" className="gap-4">
+                  Book a meeting <PhoneCall className="w-4 h-4" />
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>

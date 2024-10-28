@@ -18,7 +18,7 @@ export const Contact = () => {
   const [date, setDate] = useState(new Date());
 
   return (
-    <div className="w-full py-5 lg:py-10">
+    <div className="w-full py-5 lg:py-10" id="contact">
       <div className="container p-5  max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10">
           <div className="flex flex-col gap-6">
@@ -39,27 +39,21 @@ export const Contact = () => {
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
                 <p>Easy to use</p>
-                <p className="text-muted-foreground text-sm">
-                  {contact.p2}
-                </p>
+                <p className="text-muted-foreground text-sm">{contact.p2}</p>
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start text-left">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
                 <p>Fast and reliable</p>
-                <p className="text-muted-foreground text-sm">
-                  {contact.p2}
-                </p>
+                <p className="text-muted-foreground text-sm">{contact.p2}</p>
               </div>
             </div>
             <div className="flex flex-row gap-6 items-start text-left">
               <Check className="w-4 h-4 mt-2 text-primary" />
               <div className="flex flex-col gap-1">
                 <p>Beautiful and modern</p>
-                <p className="text-muted-foreground text-sm">
-                  {contact.p2}
-                </p>
+                <p className="text-muted-foreground text-sm">{contact.p2}</p>
               </div>
             </div>
           </div>

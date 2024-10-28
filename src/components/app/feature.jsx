@@ -4,8 +4,8 @@ import { User } from "lucide-react";
 import { feature } from "@/config/data/home-page";
 
 export const Feature = () => (
-  <div className="w-full py-5 lg:py-10">
-    <div className="container p-5 mx-auto">
+  <div className="w-full py-5 lg:py-10 px-5 md:px-10">
+    <div className="container mx-auto">
       <div className="grid border rounded-lg container p-8 grid-cols-1 gap-8 items-center lg:grid-cols-2">
         <div className="flex gap-10 flex-col">
           <div className="flex gap-4 flex-col">
@@ -22,33 +22,17 @@ export const Feature = () => (
             </div>
           </div>
           <div className="grid lg:pl-6 grid-cols-1 sm:grid-cols-3 items-start lg:grid-cols-1 gap-6">
-            <div className="flex flex-row gap-6 items-start">
-              <Check className="w-4 h-4 mt-2 text-primary" />
-              <div className="flex flex-col gap-1">
-                <p>{feature.p2}</p>
-                <p className="text-muted-foreground text-sm">
-                  {feature.p3}
-                </p>
+            {feature.options.map((val, index) => (
+              <div className="flex flex-row gap-6 items-start" key={index}>
+                <Check className="w-4 h-4 mt-2 text-primary" />
+                <div className="flex flex-col gap-1">
+                  <p>{val.titile}</p>
+                  <p className="text-muted-foreground text-sm">
+                    {val.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="flex flex-row gap-6 items-start">
-              <Check className="w-4 h-4 mt-2 text-primary" />
-              <div className="flex flex-col gap-1">
-                <p>{feature.p4}</p>
-                <p className="text-muted-foreground text-sm">
-                  {feature.p5}
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-row gap-6 items-start">
-              <Check className="w-4 h-4 mt-2 text-primary" />
-              <div className="flex flex-col gap-1">
-                <p>{feature.p6}</p>
-                <p className="text-muted-foreground text-sm">
-                  {feature.p7}
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className="bg-muted rounded-md aspect-square"></div>
