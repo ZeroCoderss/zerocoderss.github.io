@@ -2,9 +2,9 @@ import ZcInvoice from "@/components/products/zc-invoice";
 
 const ZcInvoicePage = () => {
   return (
-    <div className="flex">
-      <div className="w-2/5 p-5">opps</div>
-      <div className="w-3/5">
+    <div className="flex flex-col xl:flex-row">
+      <div className="xl:w-2/5 p-5">opps</div>
+      <div className="xl:w-3/5">
         <ZcInvoice />
       </div>
     </div>

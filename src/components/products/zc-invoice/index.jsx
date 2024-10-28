@@ -16,7 +16,7 @@ export default function ZcInvoice() {
   const { toPDF, targetRef } = usePDF();
 
   return (
-    <div className="p-2">
+    <div className="p-2 hidden lg:block">
       <header className="flex justify-between h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
         <div className="flex items-center gap-2 px-4"></div>
         <div className="flex flex-row items-center justify-between mr-4">
@@ -28,8 +28,8 @@ export default function ZcInvoice() {
         </div>
       </header>
       <div>
-        <div className="w-full">
-          <div className="max-h-screen-content overflow-y-auto pl-4 pr-4">
+        <div>
+          <div className="overflow-y-auto pl-4 pr-4">
             <InvoiceTemplate targetRef={targetRef} invoiceData={invoiceData} />
           </div>
         </div>
