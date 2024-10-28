@@ -88,7 +88,6 @@ export const FooterComp = () => {
                   {item.href ? (
                     <Link
                       href={item.href}
-                      key={item.title}
                       className="flex justify-between items-center"
                     >
                       <span className="text-xl">{item.title}</span>

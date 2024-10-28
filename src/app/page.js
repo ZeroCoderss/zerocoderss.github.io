@@ -9,8 +9,8 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <Feature />
-      <Blog1 />
       <Faq />
+      <Blog1 />
       <FooterComp />
     </div>
   );
