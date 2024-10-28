@@ -24,8 +24,8 @@ export const HeaderNav = () => {
       items: [
         {
           title: "ZC Invoice",
-          href: "/zc-invoice",
-        }
+          href: "prodcut/zc-invoice",
+        },
       ],
     },
     {
