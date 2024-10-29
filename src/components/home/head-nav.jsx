@@ -12,6 +12,8 @@ import {
 import { Menu, MoveRight, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import SVGicon from "@public/logos/light-logo.svg";
+import Image from "next/image";
 
 const navigationItems = [
   {
@@ -51,10 +53,12 @@ export const HeaderNav = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className="w-full z-40 fixed top-0 left-0 bg-background ">
+    <header className="w-full z-40 fixed top-0 left-0 bg-background shadow-sm ">
       <div className="container p-5 relative mx-auto min-h-20 flex gap-2 flex-row xl:grid xl:grid-cols-3 items-center">
         <div className="flex pr-6">
-          <p className="font-semibold">ZeroCoderss</p>
+          <p className="font-semibold">
+            <Image src={SVGicon} width={100} height={100} alt="logo" priority />
+          </p>
         </div>
 
         <div className="justify-center items-center gap-2 lg:flex hidden flex-row ">
