@@ -1,6 +1,9 @@
+"use client";
+
 import localFont from "next/font/local";
 import "./globals.css";
 import { HeaderNav } from "@/components/home/head-nav";
+import { usePathname, useRouter } from "next/navigation";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,18 +16,15 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
-  title: "ZeroCoderss",
-  description: "Make free code for all",
-};
-
 export default function RootLayout({ children }) {
+  const router = useRouter();
   return (
     <html lang="en">
+      <title>ZeroCoderss</title>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <HeaderNav />
+        {router.pathname !== "/*" && <HeaderNav />}
         <div className="mt-20">{children}</div>
       </body>
     </html>

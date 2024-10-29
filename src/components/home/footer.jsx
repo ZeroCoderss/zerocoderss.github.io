@@ -79,12 +79,15 @@ export const FooterComp = () => {
             </div>
           </div>
           <div className="grid lg:grid-cols-3 gap-10 items-start lg:justify-self-end">
-            {navigationItems.map((item) => (
+            {navigationItems.map((item, index) => (
               <div
-                key={item.title}
+                key={`${item.title}_${index}`}
                 className="flex text-base gap-1 flex-col items-start"
               >
-                <div className="flex flex-col gap-2">
+                <div
+                  className="flex flex-col gap-2"
+                  key={`${item.title}_${index}`}
+                >
                   {item.href ? (
                     <Link
                       href={item.href}

@@ -111,7 +111,7 @@ export const HeaderNav = () => {
         </div>
 
         <div className="flex justify-end w-full gap-2">
-          <Link href="contact">
+          <Link href="/contact">
             <Button variant="ghost" className="hidden md:inline">
               Book a meeting
             </Button>

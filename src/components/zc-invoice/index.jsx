@@ -18,7 +18,9 @@ export default function ZcInvoice() {
   return (
     <div className="hidden lg:block">
       <header className="flex justify-between h-16 shrink-0 items-center gap-2 transition-[width,height] ease-linear group-has-[[data-collapsible=icon]]/sidebar-wrapper:h-12">
-        <div className="flex items-center gap-2 px-4"></div>
+        <div className="flex items-center gap-2 px-4 text-lg font-bold">
+          Demo Create Invoice
+        </div>
         <div className="flex flex-row items-center justify-between mr-4">
           <InvoiceSlider
             invoiceData={invoiceData}
