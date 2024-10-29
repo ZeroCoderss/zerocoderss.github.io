@@ -12,20 +12,8 @@ export const FooterComp = () => {
       description: "Managing a small business today is already tough.",
       items: [
         {
-          title: "Reports",
-          href: "/reports",
-        },
-        {
-          title: "Statistics",
-          href: "/statistics",
-        },
-        {
-          title: "Dashboards",
-          href: "/dashboards",
-        },
-        {
-          title: "Recordings",
-          href: "/recordings",
+          title: "ZcInvoice",
+          href: "/products/zc-invoice",
         },
       ],
     },
@@ -35,15 +23,7 @@ export const FooterComp = () => {
       items: [
         {
           title: "About us",
-          href: "/about",
-        },
-        {
-          title: "Fundraising",
-          href: "/fundraising",
-        },
-        {
-          title: "Investors",
-          href: "/investors",
+          href: "#",
         },
         {
           title: "Contact us",

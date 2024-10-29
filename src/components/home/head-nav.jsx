@@ -25,7 +25,7 @@ const navigationItems = [
     button: { text: "Book a meeting", href: "/contact" },
     items: [
       {
-        title: "ZC Invoice",
+        title: "ZcInvoice",
         href: "/products/zc-invoice",
       },
     ],

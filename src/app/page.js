@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Feature />
       <Faq />
-      <Blog1 />
+      {/* <Blog1 /> */}
       <FooterComp />
     </div>
   );
